@@ -3,4 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="grisAssists">#9E9E9E</color>
+    <color name="pinkBG" >#ffd0b0</color>
+    <color name="darkPink">#ffc299</color>
+    <color name="pitchBlack">#000000</color>
 </resources>

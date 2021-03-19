@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pinkBG"
+    android:paddingRight="5dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/darkPink"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="15 marzo"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="11:00"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eventoNombre"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Manifestación Urquinaona"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ubiConcert"
+                android:layout_width="wrap_content"
+                android:text="Badalona"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/numAssists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_marginTop="40dp"
+            android:text="2/25"
+            android:textColor="@color/grisAssists"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+
+
+</LinearLayout>
