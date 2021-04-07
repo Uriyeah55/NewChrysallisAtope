@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intentLogin = new Intent(Login.this, menu_principal.class);
+                Intent intentLogin = new Intent(LoginActivity.this, MenuActivity.class);
                 startActivity(intentLogin);
             }
         });

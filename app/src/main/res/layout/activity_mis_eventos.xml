@@ -6,7 +6,7 @@
     android:background="@color/pinkBG"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".menu_principal">
+    tools:context=".EventosActivity">
 
     <LinearLayout
         android:id="@+id/menuBottom"
