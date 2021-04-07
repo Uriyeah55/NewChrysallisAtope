@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,9 +29,9 @@ public class MenuActivity extends AppCompatActivity {
         ListView llists= findViewById(R.id.llistaProva);
 
         //Evento[] listaEventos=getEventos();
-        Evento[] listaEventos;
-
-        EventoAdapter adapter=new EventoAdapter(listaEventos);
+       //Evento[] listaEventos;
+        ArrayList<Evento> listaEventos= getEventos();
+        EventoAdapter adapter=new EventoAdapter(this,listaEventos);
 
         // Set The Adapter
         llists.setAdapter(adapter);
