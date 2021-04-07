@@ -7,6 +7,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FavActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAVORITOS"/>
 
     <LinearLayout
         android:id="@+id/menuBottom"
@@ -14,28 +18,7 @@
         android:padding="5dp"
         android:layout_marginTop="630dp"
         android:orientation="horizontal"
-        android:layout_height="100dp">
-
-<LinearLayout
-    android:orientation="vertical"
-    android:gravity="center"
-    android:layout_gravity="bottom"
-    android:layout_width="100dp"
-    android:layout_height="wrap_content"
-    android:clickable="true">
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="60dp"
-        android:src="@drawable/home" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/pitchBlack"
-        android:text="Menú">
-    </TextView>
-</LinearLayout>
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:orientation="vertical"
@@ -43,7 +26,31 @@
             android:layout_gravity="bottom"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:clickable="true">
+            android:clickable="true"
+            android:id="@+id/linBotPrincipal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:src="@drawable/home"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/pitchBlack"
+                android:text="Menú">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/linBotEventos">
 
             <ImageView
                 android:layout_width="30dp"
@@ -64,19 +71,18 @@
             android:layout_gravity="bottom"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:clickable="true">
+            android:clickable="true"
+            android:id="@+id/linBotFav">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="60dp"
-                android:src="@drawable/heartfull"
-                />
+                android:src="@drawable/heartsilueta" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/pitchBlack"
-                android:textStyle="bold"
                 android:text="Favoritos">
             </TextView>
         </LinearLayout>
@@ -87,7 +93,8 @@
             android:layout_gravity="bottom"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:clickable="true">
+            android:clickable="true"
+            android:id="@+id/linBotPerfil">
 
             <ImageView
                 android:layout_width="30dp"
@@ -97,12 +104,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:textColor="@color/pitchBlack"
                 android:text="Mi perfil">
             </TextView>
         </LinearLayout>
 
-        </LinearLayout>
-
     </LinearLayout>
+
+</LinearLayout>

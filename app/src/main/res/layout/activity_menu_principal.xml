@@ -9,10 +9,21 @@
     tools:context=".MenuActivity">
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="621dp">
+
+        <ListView
+            android:id="@+id/llistaProva"
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/menuBottom"
         android:layout_width="match_parent"
         android:padding="5dp"
-        android:layout_marginTop="630dp"
+        android:layout_marginTop="0dp"
         android:orientation="horizontal"
         android:layout_height="match_parent">
 
