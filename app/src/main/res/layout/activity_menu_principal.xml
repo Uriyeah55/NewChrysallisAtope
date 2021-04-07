@@ -14,7 +14,7 @@
         android:padding="5dp"
         android:layout_marginTop="630dp"
         android:orientation="horizontal"
-        android:layout_height="100dp">
+        android:layout_height="match_parent">
 
 <LinearLayout
     android:orientation="vertical"
