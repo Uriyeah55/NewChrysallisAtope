@@ -81,7 +81,7 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.ViewHolder
 
 }
 
-/*/*
+/*
 
 
 public class ContacteAdapter extends ArrayAdapter<Contacte> {
@@ -117,4 +117,4 @@ image2.setImageResource(currentContacte.getImageDrawable2());
 
 return listItem;
 }
-}*/*/
+}*/
