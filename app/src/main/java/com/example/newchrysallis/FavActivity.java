@@ -11,6 +11,7 @@ public class FavActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favoritos);
+        getSupportActionBar().hide();
 
         LinearLayout menu=findViewById(R.id.linBotPrincipal);
         LinearLayout eventos=findViewById(R.id.linBotEventos);

@@ -13,6 +13,7 @@ public class EventosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mis_eventos);
+        getSupportActionBar().hide();
 
         LinearLayout menu=findViewById(R.id.linBotPrincipal);
         LinearLayout favoritos=findViewById(R.id.linBotFav);

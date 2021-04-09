@@ -16,11 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EventosActivity"> </activity>
-        <activity android:name=".MenuActivity"> </activity>
-        <activity android:name=".FavActivity"> </activity>
-        <activity android:name=".PerfilActivity"> </activity>
-
+        <activity android:name=".EventosActivity"/>
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".FavActivity"/>
+        <activity android:name=".PerfilActivity"/>
     </application>
 
 </manifest>

@@ -6,5 +6,7 @@
     <color name="grisAssists">#9E9E9E</color>
     <color name="pinkBG" >#ffd0b0</color>
     <color name="darkPink">#ffc299</color>
+
     <color name="pitchBlack">#000000</color>
+    <color name="colorBotones">#f6b26b</color>
 </resources>

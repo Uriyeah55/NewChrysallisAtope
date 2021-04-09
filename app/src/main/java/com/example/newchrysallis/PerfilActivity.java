@@ -11,6 +11,7 @@ public class PerfilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
+        getSupportActionBar().hide();
 
         LinearLayout menu=findViewById(R.id.linBotPrincipal);
         LinearLayout eventos=findViewById(R.id.linBotEventos);
