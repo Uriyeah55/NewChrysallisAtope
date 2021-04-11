@@ -9,7 +9,7 @@
     tools:context=".FavActivity">
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="650dp">
+        android:layout_height="770dp">
 
         <ListView
             android:id="@+id/llistaProva"
