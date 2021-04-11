@@ -46,10 +46,6 @@ public class EventoAdapter extends ArrayAdapter<Evento> {
         TextView numAsistentes = (TextView) listItem.findViewById(R.id.txtUbicacion);
         numAsistentes.setText(Integer.toString(currentEvento.getAforo()));
 
-
-
-
-
         return listItem;
     }
 }

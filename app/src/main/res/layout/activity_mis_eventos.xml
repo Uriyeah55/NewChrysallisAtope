@@ -32,7 +32,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="60dp"
-                android:src="@drawable/home"/>
+                android:src="@drawable/homesilueta"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="60dp"
-                android:src="@drawable/calendar" />
+                android:src="@drawable/calendarfull" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="60dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/usersilueta" />
 
             <TextView
                 android:layout_width="wrap_content"

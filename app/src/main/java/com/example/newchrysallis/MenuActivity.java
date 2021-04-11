@@ -2,8 +2,11 @@ package com.example.newchrysallis;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.EventLog;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -27,15 +30,22 @@ public class MenuActivity extends AppCompatActivity {
         LinearLayout eventos=findViewById(R.id.linBotEventos);
         LinearLayout favoritos=findViewById(R.id.linBotFav);
         LinearLayout perfil=findViewById(R.id.linBotPerfil);
-        ListView llists= findViewById(R.id.llistaProva);
+        ListView llista= findViewById(R.id.llistaProva);
 
-        //Evento[] listaEventos=getEventos();
-       //Evento[] listaEventos;
         ArrayList<Evento> listaEventos= getEventos();
         EventoAdapter adapter=new EventoAdapter(this,listaEventos);
 
         // Set The Adapter
-        llists.setAdapter(adapter);
+        llista.setAdapter(adapter);
+
+        llista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent evento=new Intent(MenuActivity.this,EventoActivity.class);
+                startActivity(evento);
+            }
+        });
+
 
         eventos.setOnClickListener(new View.OnClickListener() {
             @Override

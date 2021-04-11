@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/nuevo_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/nuevo_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
@@ -20,6 +20,7 @@
         <activity android:name=".MenuActivity"/>
         <activity android:name=".FavActivity"/>
         <activity android:name=".PerfilActivity"/>
+        <activity android:name=".EventoActivity"/>
     </application>
 
 </manifest>

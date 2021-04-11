@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
+    final  String NOMBREUSUARIO="1460770";
+    final  String CONTRASENYA="admin";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +39,10 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                if(!usuario.getText().toString().equals("")&&!contrasenya.getText().toString().equals("")){
-                    Intent intentLogin = new Intent(LoginActivity.this, MenuActivity.class);
-                    startActivity(intentLogin);
+                   if(usuario.getText().toString().equals(NOMBREUSUARIO)&&contrasenya.getText().toString().equals(CONTRASENYA)) {
+                       Intent intentLogin = new Intent(LoginActivity.this, MenuActivity.class);
+                       startActivity(intentLogin);
+                   }
                 }else if(contrasenya.getText().toString().equals("")&&usuario.getText().toString().equals("")){
                     Context context = getApplicationContext();
                     CharSequence text = "Campos vacíos";
