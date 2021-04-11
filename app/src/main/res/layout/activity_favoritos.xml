@@ -7,18 +7,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".FavActivity">
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FAVORITOS"/>
+        android:layout_height="650dp">
+
+        <ListView
+            android:id="@+id/llistaProva"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/menuBottom"
         android:layout_width="match_parent"
         android:padding="5dp"
-        android:layout_marginTop="630dp"
         android:orientation="horizontal"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
 
         <LinearLayout
             android:orientation="vertical"

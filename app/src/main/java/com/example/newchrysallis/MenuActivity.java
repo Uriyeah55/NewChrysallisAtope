@@ -76,12 +76,19 @@ public class MenuActivity extends AppCompatActivity {
         Provincia prov=new Provincia(1, "Barcelona");
         Localidad loc= new Localidad(3, "Badalona",prov);
          ArrayList<Evento> evs= new ArrayList<Evento>();
-         evs.add(new Evento(1,"Manifa", "jaj", 23, 500, 63, loc));
-        evs.add(new Evento(1,"Manifa", "jaj", 23, 500, 63, loc));
-        evs.add(new Evento(1,"Manifa", "jaj", 23, 500, 63, loc));
-        evs.add(new Evento(1,"Manifa", "jaj", 23, 500, 63, loc));
-        evs.add(new Evento(1,"Manifa", "jaj", 23, 500, 63, loc));
-        evs.add(new Evento(1,"Manifa", "jaj", 23, 500, 63, loc));
+         evs.add(new Evento(1,"Manifestació", "jaj", 0, 500, 63, loc));
+        evs.add(new Evento(1,"Colònies", "jaj", 0, 500, 6, loc));
+        evs.add(new Evento(1,"Curs", "jaj", 23, 50, 49, loc));
+        evs.add(new Evento(1,"Colònies", "jaj", 23, 500, 12, loc));
+        evs.add(new Evento(1,"Manifa", "jaj", 0, 500, 22, loc));
+        evs.add(new Evento(1,"Manifestació", "jaj", 23, 500, 11, loc));
+        evs.add(new Evento(1,"Curs", "jaj", 23, 500, 78, loc));
+        evs.add(new Evento(1,"Manifestació", "jaj", 23, 500, 89, loc));
+        evs.add(new Evento(1,"Manifestació", "jaj", 0, 500, 60, loc));
+        evs.add(new Evento(1,"Colònies", "jaj", 23, 500, 499, loc));
+        evs.add(new Evento(1,"Colònies", "jaj", 23, 500, 499, loc));
+        evs.add(new Evento(1,"Curs", "jaj", 0, 50, 47, loc));
+        evs.add(new Evento(1,"Curs", "jaj", 23, 50, 49, loc));
 return evs;
 
     }

@@ -14,15 +14,15 @@
         android:background="@color/colorBotones"
         android:text="CERRAR SESIÓN"
         android:layout_gravity="right"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:id="@+id/logOutButton"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="40dp"
-        android:layout_marginHorizontal="20dp">
+        android:layout_marginHorizontal="35dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,11 +32,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Usuarie:"/>
+                android:text="Usuarie:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Usu4567344"/>
+                android:text="Usu4567344"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -47,11 +49,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:"/>
+                android:text="Nombre:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Marta Llanos Rodríguez"/>
+                android:text="Marta Llanos Rodríguez"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -62,11 +66,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dirección:"/>
+                android:text="Dirección:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rambla de Raval 14, 2o 1a"/>
+                android:text="Rambla de Raval 14, 2o 1a"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -77,11 +83,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DNI:"/>
+                android:text="DNI:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="36789765R"/>
+                android:text="36789765R"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -92,11 +100,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Correo:"/>
+                android:text="Correo:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="mllanosr@gmail.com"/>
+                android:text="mllanosr@gmail.com"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -107,15 +117,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Teléfono:"/>
+                android:text="Teléfono:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="610212517"/>
+                android:text="610212517"
+                android:layout_marginHorizontal="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="937610642"/>
+                android:text="937610642"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -126,11 +139,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Localidad:"/>
+                android:text="Localidad:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Barcelona"/>
+                android:text="Barcelona"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -141,11 +156,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CP:"/>
+                android:text="CP:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="08001"/>
+                android:text="08001"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -156,11 +173,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre menor:"/>
+                android:text="Nombre menor:"
+                android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pedro"/>
+                android:text="Pedro"
+                android:layout_marginHorizontal="20dp"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -53,17 +53,27 @@ public class EventoActivity extends AppCompatActivity {
 
         final ImageView imgCorazon=findViewById(R.id.btnApuntame);
         final boolean apuntado=false;
+        final boolean favorito=false;
         final Button apuntame=findViewById(R.id.btnConfirmar);
 
         apuntame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(!apuntado){
-                    imgCorazon.setImageResource(R.drawable.heartfull);
                     apuntame.setText("CANCELAR ASISTENCIA");
                 }else{
-                    imgCorazon.setImageResource(R.drawable.heartsilueta);
                     apuntame.setText("CONFIRMAR ASISTENCIA");
+                }
+            }
+        });
+
+        imgCorazon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!favorito){
+                    imgCorazon.setImageResource(R.drawable.heartfull);
+                }else{
+                    imgCorazon.setImageResource(R.drawable.heartsilueta);
                 }
             }
         });
