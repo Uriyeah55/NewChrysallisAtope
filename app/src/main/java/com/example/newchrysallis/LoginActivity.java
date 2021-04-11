@@ -9,13 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
-    final  String NOMBREUSUARIO="1460770";
-    final  String CONTRASENYA="admin";
+    final  String NOMBREUSUARIO="Admin";
+    final  String CONTRASENYA="Admin";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,10 @@ public class LoginActivity extends AppCompatActivity {
         final Switch swMantener=findViewById(R.id.switchInit);
         final TextView txt=findViewById(R.id.txtContra);
 
-        ColorStateList oldColors =  txt.getTextColors();
+        final ImageView ver=findViewById(R.id.imagenOjo);
 
-        swMantener.setTextColor(oldColors);;
+        ColorStateList oldColors =  txt.getTextColors();
+        swMantener.setTextColor(oldColors);
 
         btoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +73,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //cuando se pulsa switch
+            }
+        });
+
+        ver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final EditText editcontra=findViewById(R.id.editContra);
+                editcontra.setTransformationMethod(null);
             }
         });
     }

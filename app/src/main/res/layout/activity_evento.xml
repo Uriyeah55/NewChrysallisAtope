@@ -34,12 +34,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Manifestación"
-                android:textSize="30dp"/>
+                android:textSize="30dp"
+                android:textStyle="bold"/>
 
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/manif"/>
+                android:src="@drawable/lgtb"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"

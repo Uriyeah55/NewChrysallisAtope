@@ -22,7 +22,7 @@
             android:src="@drawable/nuevo_logo"/>
 
         <LinearLayout
-            android:layout_width="253dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="100dp"
@@ -38,36 +38,47 @@
 
             <EditText
                 android:id="@+id/editUsuario"
-                android:layout_width="match_parent"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="253dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginHorizontal="100dp"
-            android:layout_marginLeft="20dp"
-            android:orientation="horizontal"
-            android:paddingTop="10dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contraseña:"
-                android:id="@+id/txtContra"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/editContra"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                />
+           <LinearLayout
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginHorizontal="100dp"
+               android:layout_marginLeft="20dp"
+               android:orientation="horizontal"
+               android:paddingTop="10dp">
 
-        </LinearLayout>
+               <TextView
+                   android:id="@+id/txtContra"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Contraseña:" />
 
+               <EditText
+                   android:id="@+id/editContra"
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="10dp"
+                   android:inputType="textWebPassword" />
+
+               <ImageView
+                   android:id="@+id/imagenOjo"
+                   android:layout_width="15dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="right"
+                   android:src="@drawable/view" />
+           </LinearLayout>
+       </LinearLayout>
         <LinearLayout
             android:layout_width="253dp"
             android:layout_height="wrap_content"
