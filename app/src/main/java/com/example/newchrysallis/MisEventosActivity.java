@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class EventosActivity extends AppCompatActivity {
+public class MisEventosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class EventosActivity extends AppCompatActivity {
         llista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent evento=new Intent(EventosActivity.this,EventoActivity.class);
+                Intent evento=new Intent(MisEventosActivity.this,EventoActivity.class);
                 startActivity(evento);
             }
         });
@@ -42,7 +42,7 @@ public class EventosActivity extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentMenu = new Intent(EventosActivity.this, MenuActivity.class);
+                Intent intentMenu = new Intent(MisEventosActivity.this, MenuActivity.class);
                 startActivity(intentMenu);
             }
         });
@@ -50,7 +50,7 @@ public class EventosActivity extends AppCompatActivity {
         favoritos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentFavoritos = new Intent(EventosActivity.this, FavActivity.class);
+                Intent intentFavoritos = new Intent(MisEventosActivity.this, FavActivity.class);
                 startActivity(intentFavoritos);
             }
         });
@@ -58,7 +58,7 @@ public class EventosActivity extends AppCompatActivity {
         perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentPerfil = new Intent(EventosActivity.this, PerfilActivity.class);
+                Intent intentPerfil = new Intent(MisEventosActivity.this, PerfilActivity.class);
                 startActivity(intentPerfil);
             }
         });

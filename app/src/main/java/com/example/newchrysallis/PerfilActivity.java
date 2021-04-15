@@ -31,7 +31,7 @@ public class PerfilActivity extends AppCompatActivity {
         eventos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentEventos = new Intent(PerfilActivity.this, EventosActivity.class);
+                Intent intentEventos = new Intent(PerfilActivity.this, MisEventosActivity.class);
                 startActivity(intentEventos);
             }
         });

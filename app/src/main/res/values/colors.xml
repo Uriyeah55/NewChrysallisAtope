@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#ffc299</color>
+    <color name="colorPrimaryDark">#ffc299</color>
+    <color name="colorAccent">#000000</color>
     <color name="grisAssists">#9E9E9E</color>
-    <color name="pinkBG" >#ffd0b0</color>
-
-    <color name="darkPink">#ffc299</color>
     <color name="pitchBlack">#000000</color>
+
+
+    <color name="pinkBG" >#ffd0b0</color>
+    <color name="darkPink">#ffc299</color>
+
     <color name="colorBotones">#f6b26b</color>
+
+
+
+    <color name="crema1">#B37D59</color>
+    <color name="crema2">#FFD1B3</color>
+    <color name="cremaPrincipal">#FFC299</color>
+
+    <color name="crema3">#FFD88C</color>
+    <color name="crema4">#E8B980</color>
+    <color name="crema5">#E89A80</color>
+    <color name="crema6">#FF998C</color>
+
+
+    <color name="comp4">#47ADB3</color>
+    <color name="comp5">#99F9FF</color>
 </resources>

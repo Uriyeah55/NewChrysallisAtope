@@ -35,7 +35,9 @@
                 android:layout_height="wrap_content"
                 android:text="Manifestación"
                 android:textSize="30dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginBottom="20dp"/>
 
             <ImageView
                 android:layout_width="200dp"
@@ -46,15 +48,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
+
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="60dp"
                     android:src="@drawable/calendar"/>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginTop="10dp">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -73,7 +78,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -125,7 +129,7 @@
                 android:textSize="20dp"
                 android:layout_margin="15dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/borde"
+                android:background="@drawable/borde_perfil"
                 android:padding="5dp"
                 />
 
@@ -149,7 +153,8 @@
                 android:text="Confirmar asistencia"
                 android:id="@+id/btnConfirmar"
                 android:layout_marginTop="100dp"
-                android:background="@color/colorBotones"/>
+                android:background="@color/colorBotones"
+                android:paddingHorizontal="5dp"/>
         </LinearLayout>
     </LinearLayout>
 

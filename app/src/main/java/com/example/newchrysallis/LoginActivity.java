@@ -6,10 +6,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.text.InputType;
+import android.text.method.PasswordTransformationMethod;
+import android.text.method.TransformationMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,25 +22,28 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     final  String NOMBREUSUARIO="Admin";
     final  String CONTRASENYA="Admin";
+    final String VISIBLE=null;
+    final TransformationMethod INVISIBLE=new PasswordTransformationMethod();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         getSupportActionBar().hide();
 
         final EditText usuario=findViewById(R.id.editUsuario);
         usuario.setText("");
         final EditText contrasenya=findViewById(R.id.editContra);
         contrasenya.setText("");
+        //contrasenya.setLongClickable(false);
         final Button btoLogin=findViewById(R.id.btoLogin);
         final Switch swMantener=findViewById(R.id.switchInit);
-        final TextView txt=findViewById(R.id.txtContra);
+        //final TextView txt=findViewById(R.id.verPassw);
 
-        final ImageView ver=findViewById(R.id.imagenOjo);
-
-        ColorStateList oldColors =  txt.getTextColors();
-        swMantener.setTextColor(oldColors);
+        //final LinearLayout ver=findViewById(R.id.linPassw);
+        final CheckBox verPassw=findViewById(R.id.checkVerPassw);
+        //ColorStateList oldColors =  txt.getTextColors();
+        //swMantener.setTextColor(oldColors);
 
         btoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,11 +84,18 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        ver.setOnClickListener(new View.OnClickListener() {
+        verPassw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final EditText editcontra=findViewById(R.id.editContra);
-                editcontra.setTransformationMethod(null);
+                if(verPassw.isChecked()){
+                    editcontra.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                    editcontra.setSelection(editcontra.length());
+                }else{
+                    editcontra.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                    editcontra.setSelection(editcontra.length());
+                }
+
             }
         });
     }

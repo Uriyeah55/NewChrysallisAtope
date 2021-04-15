@@ -2,20 +2,14 @@ package com.example.newchrysallis;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.EventLog;
-import android.view.Menu;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -50,7 +44,7 @@ public class MenuActivity extends AppCompatActivity {
         eventos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentEventos = new Intent(MenuActivity.this, EventosActivity.class);
+                Intent intentEventos = new Intent(MenuActivity.this, MisEventosActivity.class);
                 startActivity(intentEventos);
             }
         });

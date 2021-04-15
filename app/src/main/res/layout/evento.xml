@@ -4,48 +4,52 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/pinkBG"
     android:paddingRight="5dp"
     android:orientation="horizontal"
-    android:layout_marginTop="20dp">
+    android:layout_marginTop="20dp"
+    android:paddingTop="10dp">
+
 
     <LinearLayout
         android:layout_width="95dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
-        android:background="@color/darkPink"
+        android:background="@drawable/borde_lista_lados"
         android:gravity="center_vertical"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/txtFecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center_vertical"
-            android:text="15 marzo"
-            android:id="@+id/txtFecha"></TextView>
+            android:text="22 abril"
+            android:textStyle="italic"/>
 
         <TextView
+            android:id="@+id/txtHora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="11:00"
-            android:id="@+id/txtHora"></TextView>
+            android:text="12:00"
+            android:textStyle="italic"/>
     </LinearLayout>
-
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/crema3">
 
 
         <LinearLayout
             android:layout_width="250dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/borde_lista_centro">
 
             <TextView
                 android:layout_width="250dp"
@@ -54,37 +58,43 @@
                 android:layout_marginBottom="10dp"
                 android:text="Manifestación Urquinaona"
                 android:padding="5dp"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
-                android:id="@+id/txtTitulo"/>
+                android:id="@+id/txtTitulo"
+                android:layout_weight="5"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:text="Badalona"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:id="@+id/txtUbicacion"/>
+                android:textSize="15sp"
+                android:id="@+id/txtUbicacion"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"/>
 
         </LinearLayout>
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_height="wrap_content">
+        android:background="@drawable/borde_lista_lados"
+        android:paddingLeft="10dp">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="bottom"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:text="0/25"
             android:textColor="@color/grisAssists"
             android:textSize="20dp"
-            android:id="@+id/txtAsist"/>
-    </FrameLayout>
+            android:id="@+id/txtAsist"
+            android:textStyle="italic"/>
+    </LinearLayout>
 
 
 

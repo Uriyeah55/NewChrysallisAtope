@@ -49,7 +49,7 @@ public class FavActivity extends AppCompatActivity {
         eventos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentEventos = new Intent(FavActivity.this, EventosActivity.class);
+                Intent intentEventos = new Intent(FavActivity.this, MisEventosActivity.class);
                 startActivity(intentEventos);
             }
         });
