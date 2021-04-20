@@ -15,16 +15,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class EventoAdapter extends ArrayAdapter<Evento> {
+public class EventoAdapter extends ArrayAdapter<Evento> implements View.OnClickListener {
 
     private Context mContext;
     private List<Evento> listEvents = new ArrayList<>();
+    private View.OnClickListener listener;
 
     public EventoAdapter(@NonNull Context context, @SuppressLint("SupportAnnotationUsage") @LayoutRes ArrayList<Evento> list) {
         super(context, 0 , list);
         mContext = context;
         listEvents = list;
     }
+
 
     @NonNull
     @Override
@@ -47,5 +49,16 @@ public class EventoAdapter extends ArrayAdapter<Evento> {
         numAsistentes.setText(Integer.toString(currentEvento.getAforo()));
 
         return listItem;
+    }
+    public void setOnClickListener(View.OnClickListener listener)
+    {
+        this.listener = listener;
+    }
+    public void onClick(View view)
+    {
+        if(listener != null)
+        {
+            listener.onClick(view);
+        }
     }
 }
