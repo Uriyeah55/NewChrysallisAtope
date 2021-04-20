@@ -68,8 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/pitchBlack"
-                android:text="Mis eventos">
-            </TextView>
+                android:text="Mis eventos"/>
         </LinearLayout>
 
         <LinearLayout
@@ -80,7 +79,6 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:id="@+id/linBotFav">
-
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="60dp"
