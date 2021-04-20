@@ -9,7 +9,6 @@
     android:layout_marginTop="20dp"
     android:paddingTop="10dp">
 
-
     <LinearLayout
         android:layout_width="95dp"
         android:layout_height="match_parent"
@@ -42,7 +41,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@color/crema3">
-
 
         <LinearLayout
             android:layout_width="250dp"
@@ -83,11 +81,10 @@
         android:background="@drawable/borde_lista_lados"
         android:paddingLeft="10dp">
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="bottom"
+            android:gravity="center_vertical"
             android:layout_marginTop="30dp"
             android:text="0/25"
             android:textColor="@color/grisAssists"
@@ -95,7 +92,5 @@
             android:id="@+id/txtAsist"
             android:textStyle="italic"/>
     </LinearLayout>
-
-
 
 </LinearLayout>

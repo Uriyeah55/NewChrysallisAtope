@@ -25,9 +25,8 @@
         android:layout_marginTop="40dp"
         android:layout_marginHorizontal="35dp"
         android:background="@drawable/borde_perfil"
-        android:paddingHorizontal="10dp"
-        android:paddingBottom="20dp"
-        android:paddingTop="10dp">
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -214,7 +213,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:textColor="@color/pitchBlack"
                 android:text="Menú">
             </TextView>
@@ -277,12 +275,12 @@
                 android:layout_width="30dp"
                 android:layout_height="60dp"
                 android:src="@drawable/user" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/pitchBlack"
-                android:text="Mi perfil">
+                android:text="Mi perfil"
+                android:textStyle="bold">
             </TextView>
         </LinearLayout>
 

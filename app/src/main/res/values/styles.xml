@@ -8,7 +8,7 @@
     </style>
 
     <style name="botones">
-        <item name="colorButtonNormal">@color/darkPink</item>
+        <item name="colorButtonNormal">@color/colorBotones</item>
     </style>
 
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- COLORES SISTEMA -->
     <color name="colorPrimary">#ffc299</color>
     <color name="colorPrimaryDark">#ffc299</color>
     <color name="colorAccent">#000000</color>
@@ -7,23 +8,22 @@
     <color name="pitchBlack">#000000</color>
 
 
+    <!-- COLORES CONFIRMADOS -->
     <color name="pinkBG" >#ffd0b0</color>
     <color name="darkPink">#ffc299</color>
-
     <color name="colorBotones">#f6b26b</color>
-
-
-
-    <color name="crema1">#B37D59</color>
-    <color name="crema2">#FFD1B3</color>
     <color name="cremaPrincipal">#FFC299</color>
 
+    <!-- COLORES POR CONFIRMAR -->
+    <color name="crema1">#B37D59</color>
+    <color name="crema2">#FFD1B3</color>
+    
     <color name="crema3">#FFD88C</color>
     <color name="crema4">#E8B980</color>
     <color name="crema5">#E89A80</color>
     <color name="crema6">#FF998C</color>
 
-
+    <!-- COLORES DESCARTADOS POR AHORA -->
     <color name="comp4">#47ADB3</color>
     <color name="comp5">#99F9FF</color>
 </resources>
