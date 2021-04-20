@@ -23,7 +23,8 @@ public class EventoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_evento);
         getSupportActionBar().hide();
-
+        Intent intent = getIntent();
+        Evento event = (Evento)intent.getExtras().getSerializable("Evento");
 
        //SPINNER
         String[] arraySpinner = new String[] {
