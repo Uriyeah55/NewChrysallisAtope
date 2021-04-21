@@ -20,7 +20,6 @@
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,7 +29,5 @@
         <activity android:name=".PerfilActivity"/>
         <activity android:name=".EventoActivity"/>
         <activity android:name=".LoginActivity"/>
-
     </application>
-
 </manifest>
